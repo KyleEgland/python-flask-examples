@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block title %}
+<title>Welcome to Example App!</title>
+{% endblock %}
+
+{% block content %}
+<h1>Welcome to my example app!</h1>
+<p>This is the landing/home/index page for the Example Application (the thing you're viewing right now). First, take a look around at everything - each part of this application is intended to be interacted with. Check out each component available in the navigation bar and come back here anytime by selecting Example in the navbar. Thanks for checking out this project and enjoy!</p>
+<h2>Contents</h2>
+<p>This application is broken up into various "sub-applications" (referred to simplay as "app" or "apps"). Each app is meant to be an example of some way in which to accomplish something with Flask (I.e. processing a form, database CRUD operations, etc.). Each application will have some information regarding it's aims and use on the app's page. Use the navigation bar or select one of the links below</p>
+{# Index navigation and descriptions #}
+<div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+  <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Home</a>
+  <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Profile</a>
+  <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Messages</a>
+  <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Settings</a>
+</div>
+<div class="tab-content" id="v-pills-tabContent">
+  <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">Something something something....and more something</div>
+  <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">...</div>
+  <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">...</div>
+  <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">...</div>
+</div>
+{% endblock %}
