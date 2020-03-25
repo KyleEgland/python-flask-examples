@@ -13,7 +13,6 @@
     {% block style %}
     <link rel="stylesheet" href="{{ url_for('static', filename='css/resetstyle.css') }}" />
     <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap/css/bootstrap.min.css') }}" />
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/globalstyle.css') }}" />
     {% endblock %}
   </head>
   <body class="app-body" id="body">
@@ -40,7 +39,7 @@
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
+            <a class="nav-link" href="{{ url_for('main.about') }}">About</a>
           </li>
         </ul>
         {# Search bar #}
@@ -52,7 +51,7 @@
     </nav>
     {# CONTENT BLOCK #}
     {# Content from pages inheriting base.html #}
-    <div class="app-content" id="content">
+    <div class="container mx-auto mt-5" id="content">
       {% block content %}
       {% endblock %}
     </div>
